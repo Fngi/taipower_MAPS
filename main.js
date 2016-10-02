@@ -65,6 +65,9 @@ function showCity(city) {
         case 'TAINAN':
             map.setCenter({lat: 22.996169, lng: 120.201330});
             break;
+        default:
+            map.setCenter({lat: 25.053699, lng: 121.507837});
+            break;
     }
     mc = new MarkerClusterer(map, markers, {imagePath: 'http://googlemaps.github.io/js-marker-clusterer/images/m'});
 }

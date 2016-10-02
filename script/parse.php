@@ -43,7 +43,7 @@ foreach (glob($path . '/src/*_feeder.csv') AS $csvFile) {
         $key = "" . $line[1] . "," . $line[2];
         if (!isset($result[$city][$key])) {
             //$result[$city][$key] = twd97_to_latlng($line[1], $line[2], '67');
-            $result[$city][$key] = array('lat' => $line[1], 'lng' => $line[2]);
+            $result[$city][$key] = array('lat' => floatval($line[1]), 'lng' => floatval($line[2]));
             $result[$city][$key]['feeders'] = array(
                 $line[3] => $capacity[$city . '_' . $line[3]],
             );
