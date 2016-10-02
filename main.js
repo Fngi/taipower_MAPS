@@ -12,10 +12,10 @@ infowindow = new google.maps.InfoWindow();
 
 $.getJSON('result.json', function (data) {
     feederData = data;
-    var block = $('.cityButtons');
-    for (city in feederData) {
-        block.append('<a href="#" onclick="showCity(\'' + city + '\'); return false;" class="btn btn-default">' + city + '</a>');
-    }
+    //var block = $('.cityButtons');
+    //for (city in feederData) {
+    //    block.append('<a href="#" onclick="showCity(\'' + city + '\'); return false;" class="btn btn-default">' + city + '</a>');
+   // }
 });
 
 function showCity(city) {
